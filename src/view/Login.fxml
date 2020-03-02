@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="318.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.LoginController">
+   <children>
+      <HBox alignment="CENTER" layoutY="-2.0" prefHeight="106.0" prefWidth="486.0">
+         <children>
+            <Label fx:id="title_lbl" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefWidth="300.0" text="Scheduler" textAlignment="CENTER" textFill="#0000fa">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox layoutY="100.0" prefHeight="106.0" prefWidth="486.0">
+         <children>
+            <VBox prefHeight="106.0" prefWidth="243.0">
+               <children>
+                  <HBox alignment="BOTTOM_CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label fx:id="username_lbl" text="UserName">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="username_txt" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox prefHeight="106.0" prefWidth="243.0">
+               <children>
+                  <HBox alignment="BOTTOM_CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label fx:id="password_lbl" text="Password">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="password_txt" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_RIGHT" layoutY="225.0" prefHeight="106.0" prefWidth="486.0">
+         <children>
+            <Button fx:id="login_btn" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#login" prefHeight="30.0" prefWidth="125.0" text="Login">
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="cancel_btn" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#cancel" prefHeight="30.0" prefWidth="125.0" text="Exit">
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <Label fx:id="error_lbl" layoutX="122.0" layoutY="217.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="17.0" prefWidth="243.0" textFill="#fa0000">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <Label fx:id="error_userpw_lbl" layoutX="122.0" layoutY="217.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="17.0" prefWidth="243.0" textFill="#fa0000">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="error_title_lbl" layoutX="132.0" layoutY="227.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="17.0" prefWidth="243.0" textFill="#fa0000">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

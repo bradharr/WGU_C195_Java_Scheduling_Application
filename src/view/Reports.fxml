@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="300.0" prefWidth="491.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ReportsController">
+   <children>
+      <HBox alignment="CENTER" layoutY="-2.0" prefHeight="106.0" prefWidth="491.0">
+         <children>
+            <Label fx:id="title_lbl" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefWidth="300.0" text="Reporting" textAlignment="CENTER" textFill="#0000fa">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <VBox layoutY="79.0" prefHeight="220.0" prefWidth="492.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="apptMonth_btn" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#showApptByTypeMonth" prefHeight="50.0" prefWidth="200.0" text="Appts by Type and Month">
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin></Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="apptProvider_btn" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#showApptByProvider" prefHeight="50.0" prefWidth="200.0" text="Appts by Provider">
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin></Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="492.0">
+               <children>
+                  <Button fx:id="apptCust_btn" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#showApptByCustomer" prefHeight="50.0" prefWidth="200.0" text="Appts by Customer">
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin></Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="150.0" prefWidth="492.0">
+               <children>
+                  <Button fx:id="back_btn" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#returnMainMenu" prefHeight="50.0" prefWidth="200.0" text="Back" />
+               </children>
+               <VBox.margin>
+                  <Insets right="20.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

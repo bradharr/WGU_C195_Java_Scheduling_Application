@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="500.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.AddAppointmentController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="51.0" prefWidth="450.0">
+         <children>
+            <Label text="Add Appointment" textFill="#0000fa">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox layoutY="94.0" prefHeight="322.0" prefWidth="450.0">
+         <children>
+            <VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="324.0" prefWidth="200.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="75.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Customer Name:" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="75.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Provider:" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="75.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Appointment Type:" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="75.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Appointment Start Date:" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="75.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Appointment Start Time:" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="202.0" prefHeight="75.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Appointment End Date:" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="278.0" prefHeight="75.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Appointment End Time:" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox maxHeight="-Infinity" prefHeight="324.0" prefWidth="250.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <ComboBox fx:id="custName_combo" prefWidth="160.0" promptText="Please Choose" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <ComboBox fx:id="provider_combo" prefWidth="160.0" promptText="Please Choose" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="apptType_txt" promptText="Appointment Type" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <DatePicker fx:id="startDate_dp" maxWidth="-Infinity" prefWidth="160.0" promptText="Start Date" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <ComboBox fx:id="start_combo" prefWidth="160.0" promptText="Please Choose" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="200.0" />
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="200.0" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <DatePicker fx:id="endDate_dp" maxWidth="-Infinity" prefWidth="160.0" promptText="End Date" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="278.0" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <ComboBox fx:id="end_combo" prefWidth="160.0" promptText="Please Choose" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_RIGHT" layoutY="414.0" prefHeight="79.0" prefWidth="450.0">
+         <children>
+            <Button fx:id="save_btn" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#saveAppt" prefHeight="50.0" prefWidth="100.0" text="Save">
+               <HBox.margin>
+                  <Insets right="15.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="cancel_btn" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#cancel" prefHeight="50.0" prefWidth="100.0" text="Cancel">
+               <HBox.margin>
+                  <Insets right="15.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
